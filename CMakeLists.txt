@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1...3.22)
-
+enable_testing()
 project(
     libname
     VERSION 0.1
@@ -14,3 +14,6 @@ add_subdirectory(src)
 
 # Build examples from example folders
 add_subdirectory(examples)
+
+# Add tests from tests folder
+add_subdirectory(tests)
